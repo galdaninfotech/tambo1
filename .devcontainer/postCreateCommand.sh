@@ -1,9 +1,9 @@
-npm i
-npm run build
-npm run dev
+#!/bin/sh
 
-cp .env.example .env
+npm i | npm run build | npm run dev |
 
-composer update
+# cp .env.example .env
 
-php artisan serve
+# composer update
+
+# php artisan serve
