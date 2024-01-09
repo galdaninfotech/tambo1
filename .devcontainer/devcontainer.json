@@ -43,5 +43,5 @@
         "php-docblocker.returnGap": true,
         "php-docblocker.useShortNames": true
     },
-    "postCreateCommand": "cp .env.example .env && composer update && php artisan serve"
+    "postCreateCommand": "npm i && npm run build && npm run dev && cp .env.example .env && composer update && php artisan serve"
 }
