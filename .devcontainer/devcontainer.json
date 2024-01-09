@@ -42,5 +42,6 @@
         "php.validate.enable": false,
         "php-docblocker.returnGap": true,
         "php-docblocker.useShortNames": true
-    }
+    },
+    "postCreateCommand": "cp .env.example .env && composer update && php artisan serve"
 }
