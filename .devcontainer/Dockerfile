@@ -23,3 +23,8 @@ RUN apt-get install nodejs -yq
     # Install Composer
 RUN wget https://getcomposer.org/installer
 RUN php installer --install-dir=/usr/local/bin --filename=composer
+    # Install mysql
+RUN apt-get update && apt-get install -y mariadb-server php8.2-mysqli mariadb-client
+    # Prepare for launch
+RUN composer update && php artisan serve
+
