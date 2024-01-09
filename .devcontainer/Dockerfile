@@ -23,5 +23,8 @@ RUN apt-get install nodejs -yq
     # Install Composer
 RUN wget https://getcomposer.org/installer
 RUN php installer --install-dir=/usr/local/bin --filename=composer
+RUN cp .env.example .env
+RUN composer update 
+RUN php artisan serve
 
 
