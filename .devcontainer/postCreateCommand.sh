@@ -1,6 +1,9 @@
-RUN npm i
-RUN npm run build
-RUN npm run dev
-RUN cp .env.example .env
-RUN composer update
-RUN php artisan serve
+npm i
+npm run build
+npm run dev
+
+cp .env.example .env
+
+composer update
+
+php artisan serve

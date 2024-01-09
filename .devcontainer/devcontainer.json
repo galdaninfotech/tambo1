@@ -43,5 +43,6 @@
         "php-docblocker.returnGap": true,
         "php-docblocker.useShortNames": true
     },
-    "postCreateCommand": "postCreateCommand.sh"
+    "postCreateCommand": "bash ./.devcontainer/postCreateCommand.sh",
+    "remoteUser": "root",
 }
